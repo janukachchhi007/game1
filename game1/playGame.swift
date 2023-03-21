@@ -35,7 +35,7 @@ class playGame: UIViewController {
     {
         let storybord: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let navigation: gameleval = storybord.instantiateViewController(withIdentifier: "gameleval") as! gameleval
-        navigation.fenq = 0.10
+        navigation.fenq = 0.09
         UserDefaults.standard.set(10, forKey: "second")
 
         self.navigationController?.pushViewController(navigation, animated: true)
@@ -45,7 +45,7 @@ class playGame: UIViewController {
     {
         let storybord: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let navigation: gameleval = storybord.instantiateViewController(withIdentifier: "gameleval") as! gameleval
-        navigation.fenq = 0.07
+        navigation.fenq = 0.05
         UserDefaults.standard.set(7, forKey: "second")
         self.navigationController?.pushViewController(navigation, animated: true)
     }
@@ -54,7 +54,7 @@ class playGame: UIViewController {
     {
         let storybord: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let navigation: gameleval = storybord.instantiateViewController(withIdentifier: "gameleval") as! gameleval
-        navigation.fenq = 0.05
+        navigation.fenq = 0.03
         UserDefaults.standard.set(5, forKey: "second")
 
         self.navigationController?.pushViewController(navigation, animated: true)

@@ -249,7 +249,7 @@
                                 <color key="trackTintColor" red="0.0" green="0.14836791160000001" blue="0.2190870643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WeH-vP-Hew">
-                                <rect key="frame" x="20" y="408" width="374" height="403"/>
+                                <rect key="frame" x="20" y="459" width="374" height="403"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

@@ -77,7 +77,7 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
                self.collectionView.reloadData()
         }))
             alert.addAction(UIAlertAction.init(title: "Home", style: .destructive,handler: { _ in
-            let navigation = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController; self.navigationController?.pushViewController(navigation, animated: true)
+            let navigation = self.storyboard?.instantiateViewController(withIdentifier: "playGame") as! playGame; self.navigationController?.pushViewController(navigation, animated: true)
           }))
             present(alert, animated: true, completion: nil)
     }
