@@ -33,21 +33,19 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         progressBar.progress = 0.0
         progress()
         highscore = UserDefaults.standard.integer(forKey: "highscore")
-       // collectionView?.backgroundColor =  .systemBlue
         colour = colour.shuffled()
         rendomColour = colour.randomElement()!
         collectionView.reloadData()
         score = point
-        highscore = score
-        self.updatehighscore()
-        
+     //   highscore = score
+        updatehighscore()
     }
     func updatehighscore()
     {
         if score > highscore
         {
             highscore = score
-        UserDefaults.standard.set(highscore, forKey: "highscore")
+        UserDefaults.standard.set(score, forKey: "highscore")
         }
     }
     
@@ -62,23 +60,21 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
             if self.progressBar.progress == 0.0
             {
                 self.time.invalidate()
+                self.updatehighscore()
                 self.showalert(tital: "Restart")
             }
         })
     }
     func showalert(tital:String)
        {
+           self.updatehighscore()
            let alert: UIAlertController = UIAlertController(title: "Game Over\n", message: "Score \(point)\n High score:\(highscore)", preferredStyle: .alert)
-           
            alert.addAction(UIAlertAction.init(title: "Restart", style: .default, handler: { _ in
            self.scolerbarlabel.text = "\(self.point -= self.point)"
-               self.scolerbarlabel.text = "\(0)"
-           self.progress()
-               self.collectionView.reloadData()
                self.point = 0
-               self.highscore = 0
-               self.updatehighscore()
-            
+               self.scolerbarlabel.text = "\(self.point)"
+               self.progress()
+               self.collectionView.reloadData()
         }))
             alert.addAction(UIAlertAction.init(title: "Home", style: .destructive,handler: { _ in
             let navigation = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController; self.navigationController?.pushViewController(navigation, animated: true)
@@ -93,7 +89,6 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
         if colour[indexPath.row].nameColour == rendomColour.nameColour{
-            //scolerbarlabel.text = point+=1
             point += 1
             score = point
             scolerbarlabel.text = "\(point)"
@@ -102,15 +97,15 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
             collectionView.reloadData()
             progress()
             timecount = UserDefaults.standard.double(forKey: "second")
-           // print(rendomColour.nameColour, "******")
         }
         else
         {
             showalert(tital: "")
+            self.time.invalidate()
             if point != 0
             {
-                //point -= 0
                 score = point
+                UserDefaults.standard.set(highscore, forKey: "score")
             }
             scolerbarlabel.text = "\(point)"
         }

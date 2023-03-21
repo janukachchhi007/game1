@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressbar: UIProgressView!
     @IBOutlet weak var playButton: UIButton!
     var time = Timer()
-    var isrunning = false
+   // var isrunning = false
     override func viewDidLoad() {
         super.viewDidLoad()
         progressbar.progress = 0.0
@@ -24,13 +24,14 @@ class ViewController: UIViewController {
     {
         var a : Float = 0.0
         self.progressbar.progress = a
-        time = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: { (time) in
+        time = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true, block: { (time) in
             a += 0.01
             self.progressbar.progress = a
             if self.progressbar.progress == 1.0
             {
-        self.naviget()
+                self.naviget()
                 self.time.invalidate()
+
             }
         })
     }
