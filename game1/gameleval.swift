@@ -17,6 +17,7 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     var highscore = UserDefaults.standard.integer(forKey: "high score")
     var rendomColour = UIColor()
     var fenq = 0.1
+    var life = 1
     var colour  = [UIColor.yellow,UIColor.brown,UIColor.cyan,UIColor.red,UIColor.gray,UIColor.green,UIColor.purple,UIColor.orange,UIColor.white]
     
     @IBOutlet weak var guessWrongColour: UILabel!
@@ -24,6 +25,9 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     @IBOutlet weak var scolerbarlabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var lifeline1: UIImageView!
+    @IBOutlet weak var lifeline2: UIImageView!
+    @IBOutlet weak var lifeline3: UIImageView!
     
     override func viewDidLoad()
     {
@@ -37,7 +41,6 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         rendomColour = colour.randomElement()!
         collectionView.reloadData()
         score = point
-     //   highscore = score
         updatehighscore()
     }
     func updatehighscore()
@@ -97,18 +100,35 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
             collectionView.reloadData()
             progress()
             timecount = UserDefaults.standard.double(forKey: "second")
+            
         }
         else
         {
-            showalert(tital: "")
-            self.time.invalidate()
-            if point != 0
+            if life == 1
             {
-                score = point
-                UserDefaults.standard.set(highscore, forKey: "score")
+                lifeline1.image = UIImage(systemName: "heart")
+                life+=1
+                life = UserDefaults.standard.integer(forKey: "life")
+                collectionView.reloadData()
             }
-            scolerbarlabel.text = "\(point)"
+            else
+            {
+                
+            }
+            else
+            {
+                showalert(tital: "")
+                self.time.invalidate()
+                if point != 0
+                {
+                    score = point
+                    UserDefaults.standard.set(highscore, forKey: "score")
+                }
+                scolerbarlabel.text = "\(point)"
+            }
         }
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

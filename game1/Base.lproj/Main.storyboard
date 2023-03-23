@@ -290,6 +290,27 @@
                                     <outlet property="delegate" destination="Fvb-Oc-VH3" id="mjl-6K-i06"/>
                                 </connections>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xC2-UC-d2q">
+                                <rect key="frame" x="213" y="107" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="F36-VN-Rd1"/>
+                                    <constraint firstAttribute="width" constant="52" id="Tul-8l-I5y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xq2-CP-dM2">
+                                <rect key="frame" x="274" y="107" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="kbg-q2-pFg"/>
+                                    <constraint firstAttribute="height" constant="52" id="uqP-ba-q9l"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xIt-bd-6wL">
+                                <rect key="frame" x="335" y="107" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="UOR-Pp-K6s"/>
+                                    <constraint firstAttribute="height" constant="52" id="W9g-5X-8OB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l0w-a9-bqa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -299,9 +320,13 @@
                             <constraint firstAttribute="bottom" secondItem="7fa-Wz-Eng" secondAttribute="bottom" id="7wl-u3-Hxd"/>
                             <constraint firstItem="cyn-u7-FF2" firstAttribute="top" secondItem="Ib1-iJ-hd3" secondAttribute="bottom" constant="43" id="DQT-ix-6g1"/>
                             <constraint firstItem="l0w-a9-bqa" firstAttribute="trailing" secondItem="cyn-u7-FF2" secondAttribute="trailing" constant="20" id="GMo-LU-B4F"/>
+                            <constraint firstItem="xC2-UC-d2q" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="213" id="Gsz-CP-Cq8"/>
+                            <constraint firstItem="xq2-CP-dM2" firstAttribute="leading" secondItem="xC2-UC-d2q" secondAttribute="trailing" constant="9" id="H5y-TJ-9VM"/>
                             <constraint firstAttribute="trailing" secondItem="7fa-Wz-Eng" secondAttribute="trailing" id="L9s-ku-PHr"/>
                             <constraint firstItem="4d1-VH-h0h" firstAttribute="top" secondItem="P87-UG-Jlc" secondAttribute="bottom" constant="8" symbolic="YES" id="NTd-X4-0Bd"/>
+                            <constraint firstItem="xIt-bd-6wL" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="Opl-1d-Qap"/>
                             <constraint firstItem="cyn-u7-FF2" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="20" id="Q4E-53-6iW"/>
+                            <constraint firstItem="xC2-UC-d2q" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="STb-Tk-rfg"/>
                             <constraint firstItem="P87-UG-Jlc" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="20" id="Sui-jj-Ogd"/>
                             <constraint firstItem="4d1-VH-h0h" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="20" id="UaH-pj-r76"/>
                             <constraint firstItem="7fa-Wz-Eng" firstAttribute="leading" secondItem="V0j-vk-tJO" secondAttribute="leading" id="YAA-JL-x5g"/>
@@ -309,12 +334,17 @@
                             <constraint firstItem="7fa-Wz-Eng" firstAttribute="top" secondItem="V0j-vk-tJO" secondAttribute="top" id="gXC-wb-uJ8"/>
                             <constraint firstItem="l0w-a9-bqa" firstAttribute="trailing" secondItem="P87-UG-Jlc" secondAttribute="trailing" constant="20" id="nVt-4g-Cnn"/>
                             <constraint firstItem="Ib1-iJ-hd3" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="152" id="qAf-Kp-RzO"/>
+                            <constraint firstItem="xIt-bd-6wL" firstAttribute="leading" secondItem="xq2-CP-dM2" secondAttribute="trailing" constant="9" id="sss-ey-2kX"/>
                             <constraint firstItem="l0w-a9-bqa" firstAttribute="trailing" secondItem="4d1-VH-h0h" secondAttribute="trailing" constant="20" id="tIY-XQ-35L"/>
+                            <constraint firstItem="xq2-CP-dM2" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="uCs-I2-LaO"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="WeH-vP-Hew" id="Mgv-55-TJL"/>
                         <outlet property="guessWrongColour" destination="P87-UG-Jlc" id="bMd-VQ-g20"/>
+                        <outlet property="lifeline1" destination="xC2-UC-d2q" id="b2u-Xn-SK8"/>
+                        <outlet property="lifeline2" destination="xq2-CP-dM2" id="kws-AE-SeE"/>
+                        <outlet property="lifeline3" destination="xIt-bd-6wL" id="JGt-6a-tRB"/>
                         <outlet property="lineLabel" destination="4d1-VH-h0h" id="BSq-Oy-cNr"/>
                         <outlet property="progressBar" destination="cyn-u7-FF2" id="h06-4C-2yp"/>
                         <outlet property="scolerbarlabel" destination="Ib1-iJ-hd3" id="FNk-no-BMh"/>
@@ -347,6 +377,7 @@
     <resources>
         <image name="494414ffb3c9005eef7d58d4c1ffb639" width="236" height="419"/>
         <image name="8380d21b040094020ff538241a139cb5-removebg-preview" width="500" height="500"/>
+        <image name="heart (1)" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
