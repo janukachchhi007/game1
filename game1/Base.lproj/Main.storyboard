@@ -292,6 +292,7 @@
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xC2-UC-d2q">
                                 <rect key="frame" x="213" y="107" width="52" height="52"/>
+                                <color key="tintColor" red="0.085748575630000004" green="0.9593095183" blue="0.93177038430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="F36-VN-Rd1"/>
                                     <constraint firstAttribute="width" constant="52" id="Tul-8l-I5y"/>
@@ -299,6 +300,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xq2-CP-dM2">
                                 <rect key="frame" x="274" y="107" width="52" height="52"/>
+                                <color key="tintColor" red="0.085748575630000004" green="0.9593095183" blue="0.93177038430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="52" id="kbg-q2-pFg"/>
                                     <constraint firstAttribute="height" constant="52" id="uqP-ba-q9l"/>
@@ -306,6 +308,7 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xIt-bd-6wL">
                                 <rect key="frame" x="335" y="107" width="52" height="52"/>
+                                <color key="tintColor" red="0.085748575630000004" green="0.9593095183" blue="0.93177038430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="52" id="UOR-Pp-K6s"/>
                                     <constraint firstAttribute="height" constant="52" id="W9g-5X-8OB"/>

@@ -75,9 +75,15 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
            alert.addAction(UIAlertAction.init(title: "Restart", style: .default, handler: { _ in
            self.scolerbarlabel.text = "\(self.point -= self.point)"
                self.point = 0
+               self.life = 1
                self.scolerbarlabel.text = "\(self.point)"
                self.progress()
+               self.lifeline1.image = UIImage(systemName: "heart.fill")
+               self.lifeline2.image = UIImage(systemName: "heart.fill")
+
+               self.lifeline3.image = UIImage(systemName: "heart.fill")
                self.collectionView.reloadData()
+              
         }))
             alert.addAction(UIAlertAction.init(title: "Home", style: .destructive,handler: { _ in
             let navigation = self.storyboard?.instantiateViewController(withIdentifier: "playGame") as! playGame; self.navigationController?.pushViewController(navigation, animated: true)
@@ -108,12 +114,29 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
             {
                 lifeline1.image = UIImage(systemName: "heart")
                 life+=1
-                life = UserDefaults.standard.integer(forKey: "life")
+                rendomColour = colour.randomElement()!
+                colour = colour.shuffled()
                 collectionView.reloadData()
+                progress()
             }
-            else
+            else if life == 2
             {
-                
+                lifeline2.image = UIImage(systemName: "heart")
+                life+=1
+                rendomColour = colour.randomElement()!
+                colour = colour.shuffled()
+                collectionView.reloadData()
+                progress()
+            }
+            else if life == 3
+            {
+                lifeline3.image = UIImage(systemName: "heart")
+                life+=1
+                rendomColour = colour.randomElement()!
+                colour = colour.shuffled()
+                collectionView.reloadData()
+                progress()
+                showalert(tital: "")
             }
             else
             {
