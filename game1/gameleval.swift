@@ -72,7 +72,7 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
        {
            self.updatehighscore()
            let alert: UIAlertController = UIAlertController(title: "Game Over\n", message: "Score \(point)\n High score:\(highscore)", preferredStyle: .alert)
-           alert.addAction(UIAlertAction.init(title: "Restart", style: .default, handler: { _ in
+           alert.addAction(UIAlertAction.init(title: "Restart", style: .default, handler: { [self] _ in
            self.scolerbarlabel.text = "\(self.point -= self.point)"
                self.point = 0
                self.life = 1
@@ -82,6 +82,10 @@ class gameleval: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
                self.lifeline2.image = UIImage(systemName: "heart.fill")
 
                self.lifeline3.image = UIImage(systemName: "heart.fill")
+               self.rendomColour = self.colour.randomElement()!
+               colour = colour.shuffled()
+               collectionView.reloadData()
+               progress()
                self.collectionView.reloadData()
               
         }))
