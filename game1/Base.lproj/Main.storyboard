@@ -290,28 +290,28 @@
                                     <outlet property="delegate" destination="Fvb-Oc-VH3" id="mjl-6K-i06"/>
                                 </connections>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xC2-UC-d2q">
-                                <rect key="frame" x="213" y="107" width="52" height="52"/>
-                                <color key="tintColor" red="0.085748575630000004" green="0.9593095183" blue="0.93177038430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IPn-21-xql">
+                                <rect key="frame" x="301" y="108.5" width="41" height="39"/>
+                                <color key="tintColor" red="0.9729047417640686" green="0.020585369318723679" blue="0.060592465102672577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="F36-VN-Rd1"/>
-                                    <constraint firstAttribute="width" constant="52" id="Tul-8l-I5y"/>
+                                    <constraint firstAttribute="width" constant="41" id="444-Jb-gCe"/>
+                                    <constraint firstAttribute="height" constant="41.5" id="zxV-VJ-pVR"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xq2-CP-dM2">
-                                <rect key="frame" x="274" y="107" width="52" height="52"/>
-                                <color key="tintColor" red="0.085748575630000004" green="0.9593095183" blue="0.93177038430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3K1-M9-4EK">
+                                <rect key="frame" x="347" y="108.5" width="41" height="39"/>
+                                <color key="tintColor" red="0.9729047417640686" green="0.020585369318723679" blue="0.060592465102672577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="52" id="kbg-q2-pFg"/>
-                                    <constraint firstAttribute="height" constant="52" id="uqP-ba-q9l"/>
+                                    <constraint firstAttribute="width" constant="41" id="8xA-wQ-Tz0"/>
+                                    <constraint firstAttribute="height" constant="41.5" id="mMB-nt-0nc"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart (1)" translatesAutoresizingMaskIntoConstraints="NO" id="xIt-bd-6wL">
-                                <rect key="frame" x="335" y="107" width="52" height="52"/>
-                                <color key="tintColor" red="0.085748575630000004" green="0.9593095183" blue="0.93177038430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fPi-jy-zsA">
+                                <rect key="frame" x="255" y="108.5" width="41" height="39"/>
+                                <color key="tintColor" red="0.9729047417640686" green="0.020585369318723679" blue="0.060592465102672577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="52" id="UOR-Pp-K6s"/>
-                                    <constraint firstAttribute="height" constant="52" id="W9g-5X-8OB"/>
+                                    <constraint firstAttribute="height" constant="41.5" id="BZX-2I-YBT"/>
+                                    <constraint firstAttribute="width" constant="41" id="yB1-m6-zrG"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -321,33 +321,33 @@
                             <constraint firstItem="P87-UG-Jlc" firstAttribute="top" secondItem="l0w-a9-bqa" secondAttribute="top" id="3oE-rQ-PGl"/>
                             <constraint firstItem="Ib1-iJ-hd3" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="73" id="4NF-TP-Saq"/>
                             <constraint firstAttribute="bottom" secondItem="7fa-Wz-Eng" secondAttribute="bottom" id="7wl-u3-Hxd"/>
+                            <constraint firstItem="3K1-M9-4EK" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="DDK-hR-2kX"/>
                             <constraint firstItem="cyn-u7-FF2" firstAttribute="top" secondItem="Ib1-iJ-hd3" secondAttribute="bottom" constant="43" id="DQT-ix-6g1"/>
+                            <constraint firstItem="IPn-21-xql" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="FNa-aD-WR9"/>
                             <constraint firstItem="l0w-a9-bqa" firstAttribute="trailing" secondItem="cyn-u7-FF2" secondAttribute="trailing" constant="20" id="GMo-LU-B4F"/>
-                            <constraint firstItem="xC2-UC-d2q" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="213" id="Gsz-CP-Cq8"/>
-                            <constraint firstItem="xq2-CP-dM2" firstAttribute="leading" secondItem="xC2-UC-d2q" secondAttribute="trailing" constant="9" id="H5y-TJ-9VM"/>
                             <constraint firstAttribute="trailing" secondItem="7fa-Wz-Eng" secondAttribute="trailing" id="L9s-ku-PHr"/>
                             <constraint firstItem="4d1-VH-h0h" firstAttribute="top" secondItem="P87-UG-Jlc" secondAttribute="bottom" constant="8" symbolic="YES" id="NTd-X4-0Bd"/>
-                            <constraint firstItem="xIt-bd-6wL" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="Opl-1d-Qap"/>
                             <constraint firstItem="cyn-u7-FF2" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="20" id="Q4E-53-6iW"/>
-                            <constraint firstItem="xC2-UC-d2q" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="STb-Tk-rfg"/>
                             <constraint firstItem="P87-UG-Jlc" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="20" id="Sui-jj-Ogd"/>
                             <constraint firstItem="4d1-VH-h0h" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="20" id="UaH-pj-r76"/>
                             <constraint firstItem="7fa-Wz-Eng" firstAttribute="leading" secondItem="V0j-vk-tJO" secondAttribute="leading" id="YAA-JL-x5g"/>
                             <constraint firstItem="l0w-a9-bqa" firstAttribute="trailing" secondItem="Ib1-iJ-hd3" secondAttribute="trailing" constant="152" id="cgw-Ko-495"/>
+                            <constraint firstItem="IPn-21-xql" firstAttribute="leading" secondItem="fPi-jy-zsA" secondAttribute="trailing" constant="5" id="fB4-dO-D2P"/>
                             <constraint firstItem="7fa-Wz-Eng" firstAttribute="top" secondItem="V0j-vk-tJO" secondAttribute="top" id="gXC-wb-uJ8"/>
                             <constraint firstItem="l0w-a9-bqa" firstAttribute="trailing" secondItem="P87-UG-Jlc" secondAttribute="trailing" constant="20" id="nVt-4g-Cnn"/>
                             <constraint firstItem="Ib1-iJ-hd3" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="152" id="qAf-Kp-RzO"/>
-                            <constraint firstItem="xIt-bd-6wL" firstAttribute="leading" secondItem="xq2-CP-dM2" secondAttribute="trailing" constant="9" id="sss-ey-2kX"/>
                             <constraint firstItem="l0w-a9-bqa" firstAttribute="trailing" secondItem="4d1-VH-h0h" secondAttribute="trailing" constant="20" id="tIY-XQ-35L"/>
-                            <constraint firstItem="xq2-CP-dM2" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="uCs-I2-LaO"/>
+                            <constraint firstItem="fPi-jy-zsA" firstAttribute="top" secondItem="4d1-VH-h0h" secondAttribute="bottom" constant="5" id="v2M-Vs-0ei"/>
+                            <constraint firstItem="fPi-jy-zsA" firstAttribute="leading" secondItem="l0w-a9-bqa" secondAttribute="leading" constant="255" id="v7C-Kj-1Ac"/>
+                            <constraint firstItem="3K1-M9-4EK" firstAttribute="leading" secondItem="IPn-21-xql" secondAttribute="trailing" constant="5" id="vyT-dZ-iSP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="WeH-vP-Hew" id="Mgv-55-TJL"/>
                         <outlet property="guessWrongColour" destination="P87-UG-Jlc" id="bMd-VQ-g20"/>
-                        <outlet property="lifeline1" destination="xC2-UC-d2q" id="b2u-Xn-SK8"/>
-                        <outlet property="lifeline2" destination="xq2-CP-dM2" id="kws-AE-SeE"/>
-                        <outlet property="lifeline3" destination="xIt-bd-6wL" id="JGt-6a-tRB"/>
+                        <outlet property="lifeline1" destination="fPi-jy-zsA" id="NQn-dv-fFM"/>
+                        <outlet property="lifeline2" destination="IPn-21-xql" id="hNL-Bj-5Lt"/>
+                        <outlet property="lifeline3" destination="3K1-M9-4EK" id="VZi-Jz-lw7"/>
                         <outlet property="lineLabel" destination="4d1-VH-h0h" id="BSq-Oy-cNr"/>
                         <outlet property="progressBar" destination="cyn-u7-FF2" id="h06-4C-2yp"/>
                         <outlet property="scolerbarlabel" destination="Ib1-iJ-hd3" id="FNk-no-BMh"/>
@@ -380,7 +380,7 @@
     <resources>
         <image name="494414ffb3c9005eef7d58d4c1ffb639" width="236" height="419"/>
         <image name="8380d21b040094020ff538241a139cb5-removebg-preview" width="500" height="500"/>
-        <image name="heart (1)" width="128" height="128"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
